@@ -11,6 +11,8 @@
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
 <title>La Virginia · Lotes El Retiro</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
 <style>
@@ -59,8 +61,11 @@ section{position:relative}
 
 /* header */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:rgba(23,26,22,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:background .3s}
-.mark{font-family:var(--f-mark);letter-spacing:.32em;font-size:17px;text-decoration:none;white-space:nowrap}
-.mark small{display:block;font-size:9px;letter-spacing:.4em;color:var(--sand);margin-top:-2px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.mark .va{height:30px;width:auto}
+.mark .wm{height:15px;width:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.foot-logo{width:min(280px,70vw);height:auto;opacity:.9}
 .nav{display:flex;gap:26px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
 .nav a{text-decoration:none;color:var(--muted)}
 .nav a:hover{color:var(--text)}
@@ -73,7 +78,9 @@ section{position:relative}
 .hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,24,19,.95) 0%,rgba(20,24,19,.55) 38%,rgba(20,24,19,.15) 70%,rgba(20,24,19,.45) 100%)}
 .hero .in{position:relative;z-index:2;width:100%;padding-block:0 clamp(48px,7vw,88px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:end}
-.hero h1{font-family:var(--f-mark);font-weight:400;font-size:clamp(52px,10vw,138px);letter-spacing:.12em;line-height:.95}
+.hero h1{margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:clamp(14px,2vw,24px)}
+.hero h1 .hva{height:clamp(56px,7vw,96px);width:auto}
+.hero h1 .hwm{width:min(640px,100%);height:auto}
 .hero .sub{font-family:var(--f-display);font-style:italic;font-size:clamp(22px,2.4vw,30px);color:var(--bone);margin-top:16px}
 .hero .side{display:flex;flex-direction:column;gap:22px;max-width:420px;justify-self:end}
 .hero .side p{color:#d6d1c4}
@@ -251,7 +258,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 </head>
 <body>
 <header class="top gut">
-  <a class="mark" href="#inicio">LA VIRGINIA<small>CONDOMINIO CAMPESTRE</small></a>
+  <a class="mark" href="#inicio" aria-label="La Virginia, inicio"><img class="va" src="img/logo-va.svg" alt=""><img class="wm" src="img/wordmark.svg" alt=""></a>
   <nav class="nav" aria-label="Secciones">
     <a href="#proyecto">Proyecto</a><a href="#diferencia">Lo que lo hace distinto</a><a href="#lotes">Lotes</a><a href="#ubicacion">Ubicación</a><a href="#galeria" class="opengal">Galería</a>
   </nav>
@@ -265,7 +272,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   <div class="in gut wrap">
     <div>
       <p class="eyebrow">Preventa · Condominio campestre</p>
-      <h1>LA VIRGINIA</h1>
+      <h1><span class="sr">La Virginia</span><img class="hva" src="img/logo-va.svg" alt=""><img class="hwm" src="img/wordmark.svg" alt=""></h1>
       <p class="sub">Dieciséis lotes entre bosque, agua y montaña.</p>
     </div>
     <div class="side">
@@ -458,7 +465,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   </div>
 </section>
 
-<footer class="gut"><div class="wrap"><span>La Virginia · Condominio campestre · El Retiro, Antioquia</span><span id="upd"></span></div></footer>
+<footer class="gut"><div class="wrap" style="align-items:flex-end"><img class="foot-logo" src="img/logo-full.svg" alt="La Virginia, condominio campestre, El Retiro, Antioquia" loading="lazy"><span id="upd"></span></div></footer>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Galería ampliada">
   <div class="media" id="lbm"></div>
