@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="La Virginia, condominio campestre de 16 lotes en El Retiro, Antioquia. Lotes urbanizados de 1.477 a 3.605 m² con portería, vías y servicios. Preventa.">
+<meta property="og:title" content="La Virginia · Lotes El Retiro">
+<meta property="og:description" content="Condominio campestre de 16 lotes en El Retiro, Antioquia. Elija su lote sobre el plano.">
+<meta property="og:image" content="img/porteria.jpg">
+<meta property="og:type" content="website">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>La Virginia · Lotes El Retiro</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: cinematic video opener, then a drafting-table masterplan (paper sheet on forest ground) that is the heart of the page; gallery, place and contact follow in calm bands. Single brand look taken from the project's Instagram: forest green + bone, by choice. */
+:root{
+  --ground:#171a16;     /* page */
+  --forest:#2d3d33;     /* brand green */
+  --olive:#333832;      /* logo ground */
+  --bone:#dfd3bd;       /* brand beige */
+  --sand:#c0b8a1;
+  --paper:#ede6d6;      /* plan sheet */
+  --ink:#1e201b;
+  --text:#ece6d9;
+  --muted:#a7a896;
+  --line:rgba(223,211,189,.18);
+  --ok:#9db58a; --hold:#d2a85a; --sold:#b4644d; --off:#7b7f74;
+  --f-mark:'Marcellus','Times New Roman',serif;
+  --f-display:'Cormorant Garamond',Georgia,serif;
+  --f-body:'Jost','Helvetica Neue',Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--ground);color:var(--text);font-family:var(--f-body);font-weight:300;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ground)}
+h1,h2,h3{margin:0;font-weight:500;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--bone);outline-offset:3px}
+.gut{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1240px;margin:0 auto}
+.eyebrow{font-family:var(--f-mark);font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--sand)}
+.h2{font-family:var(--f-display);font-size:clamp(36px,4.6vw,62px);line-height:1.04;color:var(--text)}
+.h2 em{font-style:italic;color:var(--bone)}
+.lede{font-size:18px;color:var(--muted);max-width:60ch}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:13px 24px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s}
+.btn.solid{background:var(--bone);color:var(--ink)}
+.btn.solid:hover{background:#f1e8d6}
+.btn.ghost{border-color:rgba(236,230,217,.5);color:var(--text);background:rgba(23,26,22,.25);backdrop-filter:blur(6px)}
+.btn.ghost:hover{background:var(--text);color:var(--ink)}
+section{position:relative}
+.band{padding-block:clamp(72px,9vw,120px)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:rgba(23,26,22,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:background .3s}
+.mark{font-family:var(--f-mark);letter-spacing:.32em;font-size:17px;text-decoration:none;white-space:nowrap}
+.mark small{display:block;font-size:9px;letter-spacing:.4em;color:var(--sand);margin-top:-2px}
+.nav{display:flex;gap:26px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+.top .btn{padding:9px 18px;font-size:12px}
+@media (max-width:900px){.nav{display:none}}
+@media (max-width:420px){.top .btn{display:none}}
+
+/* hero */
+.hero{min-height:min(86vh,860px);display:flex;align-items:flex-end;overflow:hidden;margin-top:-64px;padding-top:64px}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,24,19,.95) 0%,rgba(20,24,19,.55) 38%,rgba(20,24,19,.15) 70%,rgba(20,24,19,.45) 100%)}
+.hero .in{position:relative;z-index:2;width:100%;padding-block:0 clamp(48px,7vw,88px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:end}
+.hero h1{font-family:var(--f-mark);font-weight:400;font-size:clamp(52px,10vw,138px);letter-spacing:.12em;line-height:.95}
+.hero .sub{font-family:var(--f-display);font-style:italic;font-size:clamp(22px,2.4vw,30px);color:var(--bone);margin-top:16px}
+.hero .side{display:flex;flex-direction:column;gap:22px;max-width:420px;justify-self:end}
+.hero .side p{color:#d6d1c4}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .tag{position:absolute;z-index:2;right:max(20px,env(safe-area-inset-right,0px));top:92px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--sand)}
+@media (max-width:820px){.hero .in{grid-template-columns:1fr}.hero .side{justify-self:start}}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1,.hero .sub,.hero .side{animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}
+  .hero .sub{animation-delay:.15s}.hero .side{animation-delay:.3s}
+}
+@keyframes rise{from{opacity:.001;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* descubre */
+.discover{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,6vw,88px);align-items:center}
+.discover .copy{display:flex;flex-direction:column;gap:22px}
+.collage{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto;gap:12px}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.collage img:first-child{grid-row:span 2;aspect-ratio:3/4}
+.collage img:nth-child(2),.collage img:nth-child(3){aspect-ratio:4/3}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(48px,6vw,80px);border-top:1px solid var(--line)}
+.fact{padding:24px 20px 0 0;display:flex;flex-direction:column;gap:4px;min-width:0}
+.fact+.fact{padding-left:20px;border-left:1px solid var(--line)}
+.fact b{font-family:var(--f-display);font-weight:500;font-size:clamp(40px,5vw,64px);line-height:1;font-variant-numeric:tabular-nums;color:var(--bone)}
+.fact span{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.discover{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-left:0;padding-left:0}.fact{padding-bottom:20px}}
+
+/* masterplan */
+#lotes{background:var(--forest)}
+.planhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
+.planhead .copy{display:flex;flex-direction:column;gap:14px;max-width:640px}
+.legend{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);font-size:13px;background:rgba(23,26,22,.25);cursor:pointer}
+.chip i{width:10px;height:10px;border-radius:50%}
+.chip[aria-pressed="true"]{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.stage{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:20px;align-items:start}
+.sheet{position:relative;background:var(--paper);border-radius:4px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);touch-action:none;user-select:none;aspect-ratio:1.02/1;max-height:82vh;width:100%}
+.sheet svg{width:100%;height:100%;display:block;cursor:grab}
+.sheet svg.drag{cursor:grabbing}
+.sheet image{mix-blend-mode:multiply}
+.lot{fill:var(--c);fill-opacity:.32;stroke:var(--c);stroke-width:2;stroke-opacity:.0;cursor:pointer;transition:fill-opacity .2s,stroke-opacity .2s}
+.lot:hover,.lot.hl{fill-opacity:.55;stroke-opacity:1;stroke-width:4}
+.lot.sel{fill-opacity:.62;stroke:#1e201b;stroke-opacity:1;stroke-width:6}
+.lot.dim{fill-opacity:.07}
+.lot:focus{outline:none}.lot:focus-visible{stroke:#1e201b;stroke-opacity:1;stroke-width:6}
+.badge circle{fill:#1e201b}
+.badge text{fill:#ede6d6;font-family:'Marcellus',serif;font-size:30px;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.badge{pointer-events:none}
+.tools{position:absolute;right:12px;top:12px;display:flex;flex-direction:column;gap:6px;z-index:3}
+.tools button{width:40px;height:40px;border-radius:50%;border:0;background:rgba(30,32,27,.88);color:var(--paper);font-size:20px;cursor:pointer;display:grid;place-items:center}
+.tools button:hover{background:#1e201b}
+.hint{position:absolute;left:14px;bottom:12px;font-size:12px;color:#5d5f55;letter-spacing:.06em;z-index:3;pointer-events:none}
+.tip{position:absolute;z-index:4;pointer-events:none;background:#1e201b;color:var(--paper);font-size:13px;padding:8px 12px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-120%);opacity:0;transition:opacity .15s}
+.tip b{font-family:var(--f-mark);font-weight:400;letter-spacing:.08em}
+.picker{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.picker button{width:44px;height:38px;border-radius:6px;border:1px solid var(--line);background:rgba(23,26,22,.25);cursor:pointer;font-family:var(--f-mark);font-size:15px;position:relative}
+.picker button::after{content:"";position:absolute;left:50%;bottom:4px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--c)}
+.picker button[aria-pressed="true"]{background:var(--bone);color:var(--ink)}
+
+/* ficha */
+.card{position:sticky;top:84px;background:var(--ground);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;max-height:calc(100vh - 104px)}
+.card .x{display:none}
+.card .body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:16px;overflow:auto}
+.card .num{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.card .num h3{font-family:var(--f-mark);font-weight:400;font-size:44px;letter-spacing:.06em;line-height:1}
+.pill{font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:5px 12px;border-radius:999px;background:var(--c);color:#1e201b;font-weight:500;white-space:nowrap}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.stats div{background:var(--ground);padding:12px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.stats div.wide{grid-column:span 2}
+.stats dt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.stats dd{margin:0;font-family:var(--f-display);font-size:26px;line-height:1.15;font-variant-numeric:tabular-nums;color:var(--text)}
+.feat{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none;font-size:15px;color:#d3cdbf}
+.feat li{display:flex;gap:10px}
+.feat li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--bone);margin-top:9px}
+.shots{position:relative;aspect-ratio:4/3;background:#232722;overflow:hidden}
+.shots img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
+.shots img.on{opacity:1}
+.shots .nav2{position:absolute;inset:auto 10px 10px auto;display:flex;gap:6px;z-index:2}
+.shots .nav2 button{width:34px;height:34px;border-radius:50%;border:0;background:rgba(23,26,22,.75);cursor:pointer;font-size:16px}
+.shots .count{position:absolute;left:12px;bottom:12px;font-size:12px;letter-spacing:.1em;background:rgba(23,26,22,.7);padding:4px 10px;border-radius:999px;z-index:2}
+.shots .empty{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted);font-size:14px}
+.shots .empty b{display:block;font-family:var(--f-display);font-size:22px;color:var(--text);font-weight:500;margin-bottom:6px}
+.shots .zoom{position:absolute;inset:0;border:0;background:transparent;cursor:zoom-in;z-index:1}
+.note{font-size:12px;color:var(--muted)}
+@media (max-width:1000px){
+  .stage{grid-template-columns:1fr}
+  .card{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:70;max-height:78vh;border-radius:16px 16px 0 0;transform:translateY(105%);transition:transform .35s cubic-bezier(.2,.7,.2,1);padding-bottom:env(safe-area-inset-bottom,0px)}
+  .card.open{transform:none}
+  .card .x{display:grid;place-items:center;position:absolute;right:12px;top:12px;z-index:3;width:38px;height:38px;border-radius:50%;border:0;background:rgba(23,26,22,.8);font-size:20px;cursor:pointer}
+  .sheet{aspect-ratio:1/1.05}
+}
+
+/* plus + ficha */
+.plushead{display:flex;flex-direction:column;gap:14px;margin-bottom:36px;padding-top:clamp(56px,7vw,96px);border-top:1px solid var(--line)}
+.plus{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.plus article{background:var(--ground);padding:28px 26px 30px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:background .3s}
+.plus article:hover{background:#1d211c}
+.plus b{font-family:var(--f-display);font-weight:500;font-size:clamp(40px,4.4vw,56px);line-height:1;color:var(--bone);font-variant-numeric:tabular-nums}
+.plus h3{font-family:var(--f-mark);font-weight:400;font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-top:8px}
+.plus p{font-size:15.5px;color:var(--muted)}
+.fichawrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,6vw,88px);align-items:start}
+.spec{margin:0;border-top:1px solid var(--line)}
+.spec div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.spec dt{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);padding-top:3px}
+.spec dd{margin:0;font-size:16px;color:var(--text)}
+@media (max-width:900px){.plus{grid-template-columns:1fr 1fr}.fichawrap{grid-template-columns:1fr}}
+@media (max-width:560px){.plus{grid-template-columns:1fr}.spec div{grid-template-columns:1fr;gap:4px}}
+/* obra */
+.obra{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px}
+.obra figure{margin:0;position:relative;overflow:hidden;border-radius:2px}
+.obra img{width:100%;height:clamp(220px,30vw,400px);object-fit:cover}
+.obra figcaption{position:absolute;left:12px;bottom:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:rgba(23,26,22,.75);padding:5px 12px;border-radius:999px}
+@media (max-width:760px){.obra{grid-template-columns:1fr 1fr}.obra figure:first-child{grid-column:span 2}}
+/* gallery overlay */
+.gal{position:fixed;inset:0;z-index:80;background:var(--ground);overflow-y:auto;padding-bottom:max(32px,env(safe-area-inset-bottom,0px))}
+.galtop{position:sticky;top:0;z-index:2;background:rgba(23,26,22,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-block:calc(14px + env(safe-area-inset-top,0px)) 14px}
+.galtop .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+/* gallery */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}
+.grid{columns:3 280px;column-gap:12px}
+.grid figure{margin:0 0 12px;break-inside:avoid;position:relative;cursor:zoom-in;overflow:hidden;border-radius:2px;background:#232722}
+.grid img,.grid video{width:100%;height:auto;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.grid figure:hover img,.grid figure:hover video{transform:scale(1.03)}
+.grid figcaption{position:absolute;left:10px;bottom:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:rgba(23,26,22,.72);padding:4px 10px;border-radius:999px}
+.grid .play{position:absolute;right:10px;top:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:rgba(23,26,22,.72);padding:4px 10px;border-radius:999px}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(12,14,12,.94);display:grid;grid-template-rows:1fr auto;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb .media{display:grid;place-items:center;min-height:0}
+.lb img,.lb video{max-width:100%;max-height:82vh;object-fit:contain}
+.lb .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;font-size:14px;color:var(--muted)}
+.lb .bar div{display:flex;gap:8px}
+.lb button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 16px;cursor:pointer}
+
+/* place */
+.place{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.place img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+.route{display:flex;flex-direction:column;gap:0;margin-top:26px;border-top:1px solid var(--line)}
+.route li{list-style:none;display:grid;grid-template-columns:36px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
+.route li span{font-family:var(--f-mark);color:var(--sand)}
+.route ol{margin:0;padding:0}
+.coords{font-size:13px;letter-spacing:.08em;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:18px}
+@media (max-width:860px){.place{grid-template-columns:1fr}}
+
+/* experiencia */
+#vida{background:var(--olive)}
+.life{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:clamp(260px,32vw,440px) clamp(240px,28vw,380px);gap:12px;margin-top:40px}
+.life figure{margin:0;position:relative;overflow:hidden;border-radius:2px;min-height:0}
+.life img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.life figure:hover img{transform:scale(1.03)}
+.life figure:nth-child(1){grid-column:span 7}
+.life figure:nth-child(2){grid-column:span 5}
+.life figure:nth-child(3){grid-column:span 5}
+.life figure:nth-child(4){grid-column:span 7}
+.life figcaption{position:absolute;inset:auto 0 0 0;padding:28px 18px 14px;background:linear-gradient(transparent,rgba(20,24,19,.85));display:flex;flex-direction:column;gap:2px}
+.life figcaption b{font-family:var(--f-display);font-weight:500;font-size:24px}
+.life figcaption small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sand)}
+.life figcaption{z-index:1}
+@media (max-width:760px){.life{grid-template-rows:none;grid-auto-rows:260px}.life figure{grid-column:span 12!important}}
+
+/* contacto */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,6vw,88px);align-items:start}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .full{grid-column:span 2}
+label{display:flex;flex-direction:column;gap:6px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:16px;letter-spacing:normal;text-transform:none;color:var(--text);background:rgba(236,230,217,.04);border:1px solid var(--line);border-radius:6px;padding:12px 14px;width:100%}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--bone)}
+.out{grid-column:span 2;border:1px solid var(--line);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px;background:rgba(236,230,217,.03)}
+.out pre{margin:0;white-space:pre-wrap;font-family:var(--f-body);font-size:15px;color:#d3cdbf}
+.out .row{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:760px){.contact{grid-template-columns:1fr}form{grid-template-columns:1fr}form .full,.out{grid-column:span 1}}
+footer{padding-block:32px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+
+</head>
+<body>
+<header class="top gut">
+  <a class="mark" href="#inicio">LA VIRGINIA<small>CONDOMINIO CAMPESTRE</small></a>
+  <nav class="nav" aria-label="Secciones">
+    <a href="#proyecto">Proyecto</a><a href="#diferencia">Lo que lo hace distinto</a><a href="#lotes">Lotes</a><a href="#ubicacion">Ubicación</a><a href="#galeria" class="opengal">Galería</a>
+  </nav>
+  <a class="btn solid" href="#contacto">Solicitar información</a>
+</header>
+
+<section class="hero" id="inicio">
+  <img class="poster" src="vid/v04.jpg" alt="">
+  <video id="herovid" autoplay muted loop playsinline preload="metadata" poster="vid/v04.jpg" aria-hidden="true"><source src="vid/v04.mp4" type="video/mp4"></video>
+  <p class="tag">El Retiro · Antioquia</p>
+  <div class="in gut wrap">
+    <div>
+      <p class="eyebrow">Preventa · Condominio campestre</p>
+      <h1>LA VIRGINIA</h1>
+      <p class="sub">Dieciséis lotes entre bosque, agua y montaña.</p>
+    </div>
+    <div class="side">
+      <p>Lotes urbanizados de 1.477 a 3.605 m², con portería, vías internas y servicios para cada lote, entre El Retiro y La Ceja.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#lotes">Explorar parcelación</a>
+        <a class="btn ghost" href="#contacto">Solicitar información</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band gut" id="proyecto">
+  <div class="wrap">
+    <div class="discover">
+      <div class="copy">
+        <p class="eyebrow">Descubre La Virginia</p>
+        <h2 class="h2">Pocos vecinos, <em>mucho paisaje.</em></h2>
+        <p class="lede">La Virginia reparte su terreno en solo dieciséis lotes alrededor de una vía interna en bucle. Entre ellos quedan zonas de bosque plantado, los retiros a los cuerpos de agua y una zona verde común con un afloramiento rocoso.</p>
+        <p class="lede">Cada lote se entrega con acueducto, energía, gas, telecomunicaciones y conexión a la planta de tratamiento propia. La portería controla el único ingreso desde la vía intervereda.</p>
+      </div>
+      <div class="collage">
+        <img src="img/p34.jpg" alt="Lote 13 banqueado con las montañas al fondo" loading="lazy">
+        <img src="img/p06.jpg" alt="Lote 2 con su letrero junto a la vía" loading="lazy">
+        <img src="img/p01.jpg" alt="Vía de acceso al condominio" loading="lazy">
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>16</b><span>lotes en total</span></div>
+      <div class="fact"><b id="f-disp">12</b><span>disponibles hoy</span></div>
+      <div class="fact"><b>3.605</b><span>m² el lote más grande</span></div>
+      <div class="fact"><b>1</b><span>portería, un solo ingreso</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band gut" id="diferencia" style="padding-top:0">
+  <div class="wrap">
+    <div class="plushead">
+      <p class="eyebrow">El plus de La Virginia</p>
+      <h2 class="h2">Seis razones para <em>elegir aquí.</em></h2>
+    </div>
+    <div class="plus">
+      <article><b>16</b><h3>Solo dieciséis lotes</h3><p>En unas 3 hectáreas de lotes, el promedio es de casi 2.000 m² por lote. Pocos vecinos y mucho espacio entre una casa y otra.</p></article>
+      <article><b>2</b><h3>Bosque dentro del condominio</h3><p>Hay bosque plantado en zona común y dos lotes, el 7 y el 8, traen su propia área privada de bosque. Los cuerpos de agua tienen retiros protegidos.</p></article>
+      <article><b>1</b><h3>Un solo ingreso, con portería</h3><p>Todo el condominio entra por una portería con bahía de aproximación sobre la vía intervereda, y tiene vigilancia con monitoreo satelital.</p></article>
+      <article><b>5</b><h3>Servicios listos en cada lote</h3><p>Acueducto, energía, gas, telecomunicaciones y conexión a una planta de tratamiento de aguas residuales propia del condominio.</p></article>
+      <article><b>$232.000</b><h3>Precio de preventa</h3><p>El valor por metro cuadrado arranca en $232.000 en el lote más grande. Los precios de preventa aplican mientras dure esta etapa.</p></article>
+      <article><b>1,6 km</b><h3>Fácil de llegar</h3><p>Entre El Retiro y La Ceja, a 1,6 km de la variante por la vía a la vereda El Chuscal. Cerca, pero lejos del ruido.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band gut" id="ficha" style="padding-top:0">
+  <div class="wrap fichawrap">
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <p class="eyebrow">Ficha técnica</p>
+      <h2 class="h2">El proyecto <em>en datos.</em></h2>
+      <p class="lede">Información tomada del plano de urbanismo y de la lista de precios vigente.</p>
+      <a class="btn solid" href="#lotes" style="align-self:flex-start">Ver los lotes</a>
+    </div>
+    <dl class="spec">
+      <div><dt>Ubicación</dt><dd>Vereda El Chuscal, El Retiro, Antioquia</dd></div>
+      <div><dt>Tipo</dt><dd>Condominio campestre de lotes urbanizados</dd></div>
+      <div><dt>Lotes</dt><dd>16 lotes · <span id="sp-disp">12</span> disponibles</dd></div>
+      <div><dt>Áreas</dt><dd>De 1.477 a 3.605 m² · 31.740 m² en lotes</dd></div>
+      <div><dt>Precios</dt><dd>Desde $645 millones · de $232.000 a $493.000 por m²</dd></div>
+      <div><dt>Vía interna</dt><dd>Vía en bucle con dos glorietas de retorno</dd></div>
+      <div><dt>Servicios</dt><dd>Acueducto, energía, gas, telecomunicaciones y PTAR propia</dd></div>
+      <div><dt>Zonas comunes</dt><dd>Bosque plantado, zona verde común con afloramiento rocoso y zona común de ingreso</dd></div>
+      <div><dt>Seguridad</dt><dd>Portería con un solo ingreso y vigilancia con monitoreo satelital</dd></div>
+      <div><dt>Etapa</dt><dd>Preventa · obra de urbanismo en ejecución</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="band gut" id="lotes">
+  <div class="wrap">
+    <div class="planhead">
+      <div class="copy">
+        <p class="eyebrow">Plano interactivo</p>
+        <h2 class="h2">Elija su lote <em>sobre el plano.</em></h2>
+        <p class="lede" style="color:#c9cdbd">Toque un lote para ver su área, su precio y sus fotos. Arrastre para moverse y use la rueda o los botones para acercarse.</p>
+      </div>
+      <div class="legend" id="legend" role="group" aria-label="Filtrar por estado"></div>
+    </div>
+    <div class="stage">
+      <div>
+        <div class="sheet" id="sheet">
+          <div class="tools">
+            <button type="button" id="zin" aria-label="Acercar">+</button>
+            <button type="button" id="zout" aria-label="Alejar">−</button>
+            <button type="button" id="zreset" aria-label="Ver plano completo">⤢</button>
+          </div>
+          <svg id="plan" viewBox="560 120 1560 1560" role="group" aria-label="Plano de la parcelación con 16 lotes">
+            <image href="img/plano.jpg" x="0" y="0" width="2576" height="1820" preserveAspectRatio="none"/>
+            <g id="lots"></g>
+            <g id="badges"></g>
+          </svg>
+          <div class="tip" id="tip"></div>
+          <p class="hint">Plano de urbanismo · Norte arriba</p>
+        </div>
+        <div class="picker" id="picker" role="group" aria-label="Seleccionar lote por número"></div>
+      </div>
+      <aside class="card" id="card" aria-live="polite">
+        <button class="x" id="cardx" type="button" aria-label="Cerrar ficha">×</button>
+        <div class="shots" id="shots"></div>
+        <div class="body" id="cardbody"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band gut" id="obra" style="padding-bottom:clamp(48px,6vw,80px)">
+  <div class="wrap">
+    <div class="planhead">
+      <div class="copy">
+        <p class="eyebrow">Avance de obra · noviembre 2026</p>
+        <h2 class="h2">La obra <em>ya está en marcha.</em></h2>
+        <p class="lede">Los lotes están banqueados y la vía de ingreso ya tiene afirmado. Avanzan las redes de servicios. Todas las fotos son reales, tomadas en el terreno.</p>
+      </div>
+      <button class="btn ghost opengal" type="button">Ver galería completa</button>
+    </div>
+    <div class="obra">
+      <figure><img src="img/p00.jpg" alt="Vía de ingreso en afirmado con la valla del proyecto" loading="lazy"><figcaption>Vía de ingreso en afirmado</figcaption></figure>
+      <figure><img src="img/p36.jpg" alt="Lote 14 banqueado con su letrero" loading="lazy"><figcaption>Lotes banqueados y marcados</figcaption></figure>
+      <figure><img src="img/p40.jpg" alt="Materiales y tuberías para redes de servicios" loading="lazy"><figcaption>Redes de servicios</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="gal" id="gal" hidden role="dialog" aria-modal="true" aria-labelledby="galt">
+  <div class="galtop gut"><div class="wrap"><div><p class="eyebrow">Galería</p><h2 class="h2" id="galt" style="font-size:clamp(30px,3.6vw,46px)">El terreno, <em>tal como está hoy.</em></h2></div><button class="btn ghost" type="button" id="galx">Cerrar</button></div></div>
+  <div class="gut"><div class="wrap">
+    <div class="tabs legend" id="tabs" role="group" aria-label="Categorías de la galería"></div>
+    <div class="grid" id="grid"></div>
+  </div></div>
+</div>
+
+<section class="band gut" id="ubicacion" style="padding-top:0">
+  <div class="wrap place">
+    <img src="img/satelite.jpg" alt="Imagen satelital del predio entre El Retiro y La Ceja" loading="lazy">
+    <div>
+      <p class="eyebrow">Ubicación</p>
+      <h2 class="h2" style="margin-top:14px">Entre El Retiro <em>y La Ceja.</em></h2>
+      <ol class="route">
+        <li><span>1</span>Tome la variante de El Retiro hacia La Ceja.</li>
+        <li><span>2</span>Gire por la vía a la vereda El Chuscal.</li>
+        <li><span>3</span>A 1,6 km, antes de la I.E.R. Dolores e Ismael Restrepo, está el ingreso al condominio.</li>
+      </ol>
+      <p class="coords">6°02'44.7" N · 75°27'46.2" O</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:22px">
+        <a class="btn solid" href="https://www.google.com/maps?q=6.045753,-75.462831" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        <a class="btn ghost" href="#contacto">Agendar visita</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band gut" id="vida">
+  <div class="wrap">
+    <p class="eyebrow">Estilo de vida</p>
+    <h2 class="h2" style="margin-top:14px">Construya su casa <em>donde el paisaje manda.</em></h2>
+    <div class="life">
+      <figure><img src="img/porteria.jpg" alt="Render de la portería" loading="lazy"><figcaption><b>Portería y un solo ingreso</b><small>Imagen ilustrativa</small></figcaption></figure>
+      <figure><img src="img/p10.jpg" alt="Lote 3 con montañas verdes y árboles nativos" loading="lazy" style="object-position:50% 40%"><figcaption><b>Montaña a la vista</b><small>Foto real · lote 3</small></figcaption></figure>
+      <figure><img src="img/p24.jpg" alt="Lote 8 junto al bosque" loading="lazy" style="object-position:50% 35%"><figcaption><b>Lotes junto al bosque</b><small>Foto real · lote 8</small></figcaption></figure>
+      <figure><img src="img/casas-piscina.jpg" alt="Render de casas campestres con piscina" loading="lazy"><figcaption><b>Así puede verse su casa</b><small>Imagen ilustrativa · cada propietario diseña la suya</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band gut" id="contacto">
+  <div class="wrap contact">
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <p class="eyebrow">Asesoría personalizada</p>
+      <h2 class="h2">Conozca el lote <em>en persona.</em></h2>
+      <p class="lede">Déjenos sus datos y el lote que le interesa. Le respondemos por WhatsApp para agendar un recorrido por el terreno.</p>
+    </div>
+    <form id="form" novalidate>
+      <label>Nombre<input id="f-nombre" name="nombre" autocomplete="name" required></label>
+      <label>Teléfono<input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></label>
+      <label class="full">Correo electrónico<input id="f-mail" name="mail" type="email" autocomplete="email"></label>
+      <label>Lote de interés<select id="f-lote" name="lote"><option value="">Aún no sé</option></select></label>
+      <label>Quiero<select id="f-tipo" name="tipo"><option>Agendar una visita</option><option>Recibir precios y planos</option><option>Asesoría de financiación</option></select></label>
+      <label class="full">Mensaje<textarea id="f-msg" name="msg" placeholder="Cuéntenos qué busca"></textarea></label>
+      <div class="full"><button class="btn solid" type="submit">Enviar por WhatsApp</button></div>
+      <div class="out" id="out" hidden></div>
+    </form>
+  </div>
+</section>
+
+<footer class="gut"><div class="wrap"><span>La Virginia · Condominio campestre · El Retiro, Antioquia</span><span id="upd"></span></div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Galería ampliada">
+  <div class="media" id="lbm"></div>
+  <div class="bar"><span id="lbc"></span><div><button type="button" id="lbp">Anterior</button><button type="button" id="lbn">Siguiente</button><button type="button" id="lbx">Cerrar</button></div></div>
+</div>
+
+<script id="seed" type="application/json">{"actualizado":"2026-11-10","config":{"whatsapp":"","nota_whatsapp":"Escriba el número con indicativo, sin espacios ni +. Ejemplo: 573001234567"},"lotes":[{"id":1,"area":1710.0,"precio":645000000,"estado":"disponible","fotos":[],"rasgos":["Colinda con el retiro al cuerpo de agua del costado oriental","Cerca de la portería"],"poligono":"1641,346 1635,346 1631,352 1631,355 1575,459 1526,460 1523,476 1516,496 1508,511 1498,524 1499,533 1557,672 1565,672 1774,559 1774,551 1756,500 1723,461 1696,416 1646,355","centro":[1629,522]},{"id":2,"area":1955.4,"precio":672000000,"estado":"disponible","fotos":["img/p06.jpg","img/p07.jpg","img/p09.jpg","img/p08.jpg"],"rasgos":["Primer lote después de la portería","Retiro a cuerpo de agua dentro del lote"],"poligono":"1351,337 1343,337 1281,370 1246,385 1187,431 1187,439 1185,440 1185,447 1183,448 1181,468 1179,469 1179,484 1181,485 1181,500 1183,502 1185,517 1185,532 1187,534 1187,543 1189,547 1190,570 1195,609 1195,630 1197,631 1197,647 1199,648 1201,681 1203,682 1203,693 1205,698 1211,698 1221,691 1248,668 1286,639 1287,631 1297,631 1456,505 1456,498 1407,428 1404,426","centro":[1296,503]},{"id":3,"area":2154.21,"precio":734000000,"estado":"disponible","fotos":["img/p12.jpg","img/p10.jpg"],"rasgos":["Frente a la vía principal","Retiro a cuerpo de agua dentro del lote"],"poligono":"1219,395 1210,395 1133,416 1113,418 1108,463 1108,491 1110,497 1113,499 1112,527 1095,531 1094,533 995,535 994,533 958,531 951,534 951,584 937,597 937,603 988,719 990,720 994,734 1017,783 1036,829 1044,829 1171,730 1175,726 1176,720 1184,720 1202,705 1202,684 1200,681 1198,664 1198,649 1196,647 1196,632 1194,631 1194,610 1192,607 1188,548 1186,547 1182,518 1182,502 1180,501 1180,460 1182,459 1182,449 1184,447 1184,440 1187,432 1199,419 1219,402","centro":[1085,624]},{"id":4,"area":1596.05,"precio":682000000,"estado":"disponible","fotos":["img/p13.jpg","img/p17.jpg","img/p11.jpg","img/p14.jpg"],"rasgos":["Frente a la vía principal, cerca de la glorieta occidental"],"poligono":"937,603 929,603 925,607 914,611 889,613 870,629 863,641 839,641 836,637 833,637 808,618 802,618 768,653 768,662 794,718 799,733 802,736 803,742 871,897 874,901 880,901 890,905 898,905 905,900 914,897 1035,834 1035,827 948,628 941,627 941,612","centro":[901,750]},{"id":5,"area":1843.72,"precio":null,"estado":"vendido","fotos":["img/p15.jpg","img/p18.jpg","img/p16.jpg"],"rasgos":["Esquina sobre la glorieta occidental"],"poligono":"767,659 759,659 730,676 671,704 634,729 621,827 623,828 623,832 627,836 629,844 635,851 647,877 649,878 649,881 651,882 651,910 649,911 645,947 643,948 643,958 641,959 637,999 645,999 667,992 672,992 699,984 701,982 707,982 830,947 832,945 832,933 839,918 851,907 869,900 869,892 816,774","centro":[732,836]},{"id":6,"area":3605.16,"precio":835000000,"estado":"disponible","fotos":["img/p20.jpg"],"rasgos":["El lote más grande del condominio","Lindero occidental"],"poligono":"905,974 899,974 886,982 860,982 850,977 842,970 834,957 832,949 824,949 688,987 686,989 639,1001 635,1004 631,1024 631,1038 641,1053 641,1058 649,1085 649,1137 651,1138 653,1148 657,1153 657,1158 661,1163 661,1193 659,1194 659,1212 657,1214 657,1229 655,1231 651,1287 653,1288 653,1304 655,1305 655,1321 657,1322 657,1335 664,1392 671,1392 681,1386 684,1386 699,1374 713,1366 718,1360 732,1352 742,1343 746,1342 779,1320 782,1320 795,1310 798,1310 804,1302 818,1292 834,1277 840,1274 849,1264 856,1260 906,1261 913,1264 919,1264 920,1266 944,1270 955,1270 979,1278 984,1278 985,1280 997,1282 998,1284 1013,1288 1020,1293 1037,1299 1044,1299 1044,1291 1022,1244 1020,1236","centro":[803,1152]},{"id":7,"area":2402.46,"precio":null,"estado":"vendido","fotos":["img/p21.jpg"],"rasgos":["Incluye área privada de bosque plantado"],"poligono":"1121,832 1113,832 1109,834 1094,847 1056,874 916,945 911,959 905,968 905,974 933,1035 937,1048 960,1097 975,1135 987,1159 1034,1267 1037,1268 1037,1275 1048,1301 1060,1299 1084,1286 1133,1252 1174,1213 1203,1176 1203,1170 1178,1149 1147,1110 1128,1072 1121,1049 1118,1018 1118,974 1120,964 1127,840 1125,835","centro":[1053,1068]},{"id":8,"area":3080.01,"precio":842000000,"estado":"disponible","fotos":["img/p24.jpg","img/p27.jpg","img/p25.jpg","img/p23.jpg"],"rasgos":["Incluye área privada de bosque plantado","Colinda con el bosque plantado de zona común"],"poligono":"1452,1185 1442,1186 1425,1196 1396,1207 1356,1215 1314,1215 1299,1213 1273,1207 1259,1201 1252,1201 1241,1216 1225,1247 1217,1269 1211,1293 1207,1335 1210,1357 1217,1378 1225,1393 1234,1405 1253,1423 1267,1432 1287,1441 1311,1467 1328,1491 1341,1515 1349,1537 1354,1539 1354,1553 1359,1570 1362,1603 1368,1603 1377,1597 1384,1589 1404,1574 1424,1555 1426,1555 1429,1550 1450,1534 1455,1527 1466,1520 1501,1488 1504,1488 1508,1482 1520,1474 1524,1468 1526,1468 1546,1449 1548,1449 1551,1444 1558,1440 1577,1422 1586,1416 1586,1407 1558,1363","centro":[1387,1366]},{"id":9,"area":1526.02,"precio":null,"estado":"vendido","fotos":[],"rasgos":["Lindero sur del condominio"],"poligono":"1561,1096 1538,1119 1512,1141 1476,1167 1453,1180 1453,1187 1586,1408 1593,1408 1624,1382 1626,1378 1629,1378 1637,1368 1644,1364 1649,1357 1651,1357 1675,1333 1679,1331 1694,1313 1699,1310 1704,1303 1742,1266 1742,1260 1568,1096","centro":[1592,1246]},{"id":10,"area":1477.04,"precio":null,"estado":"vendido","fotos":[],"rasgos":["Lindero oriental del condominio"],"poligono":"1638,974 1630,998 1615,1028 1599,1052 1567,1089 1567,1095 1741,1259 1747,1259 1752,1256 1752,1254 1760,1248 1768,1238 1770,1238 1795,1214 1801,1211 1808,1203 1823,1192 1823,1186 1817,1176 1818,1149 1856,1117 1868,1101 1868,1094 1646,974","centro":[1715,1112]},{"id":11,"area":1991.41,"precio":750000000,"estado":"disponible","fotos":[],"rasgos":["Colinda con el retiro al cuerpo de agua del costado oriental","Cerca de la glorieta oriental"],"poligono":"1982,942 1977,936 1973,935 1971,926 1942,878 1931,855 1923,843 1923,840 1899,819 1892,819 1820,837 1818,839 1757,853 1739,859 1702,867 1692,871 1659,878 1649,892 1649,925 1641,963 1641,971 1867,1093 1874,1093 1888,1078 1921,1029 1928,1022 1938,1005 1946,998 1966,971 1969,970 1971,965 1974,964 1975,960 1978,958 1978,955 1982,951","centro":[1818,945]},{"id":12,"area":1975.15,"precio":737000000,"estado":"disponible","fotos":["img/p30.jpg","img/p35.jpg","img/p28.jpg"],"rasgos":["Colinda con el retiro al cuerpo de agua del costado oriental"],"poligono":"1777,561 1771,561 1744,575 1699,601 1687,606 1561,675 1561,682 1617,815 1632,816 1643,820 1655,830 1661,839 1663,845 1663,875 1676,874 1890,819 1890,813 1882,806 1860,805 1859,801 1855,801 1852,798 1852,775 1826,733 1800,686 1789,644 1784,580","centro":[1715,731]},{"id":13,"area":1640.4,"precio":745000000,"estado":"disponible","fotos":["img/p34.jpg","img/p38.jpg","img/p29.jpg"],"rasgos":["Sobre la vía principal, cerca de la glorieta oriental"],"poligono":"1492,532 1468,553 1433,579 1432,583 1426,585 1334,658 1334,665 1463,840 1469,842 1582,852 1583,845 1590,832 1604,820 1613,817 1614,809 1571,706 1567,705 1567,696 1560,679 1557,676 1557,672 1520,583 1518,582 1518,578 1499,533","centro":[1480,708]},{"id":14,"area":1559.11,"precio":742000000,"estado":"disponible","fotos":["img/p36.jpg","img/p32.jpg","img/p33.jpg","img/p37.jpg","img/p31.jpg"],"rasgos":["Frente a la vía en bucle, cerca de la glorieta oriental"],"poligono":"1582,853 1479,843 1463,843 1357,935 1357,942 1433,1137 1440,1137 1459,1125 1490,1102 1515,1080 1557,1034 1582,996 1596,962 1604,921 1604,894 1588,879 1582,864","centro":[1482,969]},{"id":15,"area":1520.57,"precio":749000000,"estado":"disponible","fotos":["img/p39.jpg","img/p40.jpg"],"rasgos":["Dentro del bucle de la vía interna"],"poligono":"1165,963 1163,976 1163,1016 1165,1035 1170,1057 1179,1077 1193,1099 1203,1111 1230,1136 1250,1149 1276,1161 1316,1170 1354,1170 1377,1166 1401,1158 1432,1141 1432,1135 1355,938 1344,938 1289,947 1221,955 1204,959","centro":[1293,1055]},{"id":16,"area":1703.63,"precio":692000000,"estado":"disponible","fotos":[],"rasgos":["Junto a la zona verde común y el afloramiento rocoso"],"poligono":"1333,664 1326,664 1218,749 1219,767 1227,808 1227,818 1229,820 1230,855 1228,857 1214,859 1171,859 1165,962 1355,936 1461,844 1461,837","centro":[1307,830]}]}</script>
+<script>
+(function(){
+var DATA=JSON.parse(document.getElementById('seed').textContent);
+var ST={disponible:{t:'Disponible',c:'#9db58a'},reservado:{t:'Reservado',c:'#d2a85a'},vendido:{t:'Vendido',c:'#b4644d'},no_disponible:{t:'No disponible',c:'#7b7f74'}};
+var fmtN=function(n,d){return n.toLocaleString('es-CO',{minimumFractionDigits:d||0,maximumFractionDigits:d||0})};
+var money=function(v){return '$'+fmtN(v)};
+var svgNS='http://www.w3.org/2000/svg';
+var $=function(id){return document.getElementById(id)};
+var sel=null, filter='todos';
+
+/* ---------- GALLERY DATA ---------- */
+var G=[
+ ['vid','v04','Recorrido por los lotes'],['vid','v00','Taludes y lotes banqueados'],['vid','v01','Vista hacia el bosque'],['vid','v02','Lotes con vista a las montañas'],['vid','v09','Llegada al predio'],
+ ['vias','p00','Ingreso y valla del proyecto'],['vias','p01','Vía de acceso'],['vias','p05','Vía interna en afirmado'],['vias','p22','Vía interna'],['vias','p02','Vía y obra de portería'],['vias','p45','Vía hacia el sector sur'],
+ ['lotes','p06','Lote 2'],['lotes','p12','Lote 3'],['lotes','p13','Lote 4'],['lotes','p21','Lote 7'],['lotes','p24','Lote 8'],['lotes','p30','Lote 12'],['lotes','p34','Lote 13'],['lotes','p36','Lote 14'],['lotes','p39','Lote 15'],['lotes','p28','Lotes 12 y 13'],['lotes','p17','Lotes 4 y 5'],['lotes','p20','Lote 6'],
+ ['paisaje','p10','Montañas al fondo'],['paisaje','p42','Flores silvestres'],['paisaje','p43','Vista desde el talud'],['paisaje','p44','Borde verde'],['paisaje','p25','Bosque plantado'],['paisaje','p27','Árbol nativo'],['paisaje','p19','Cielo abierto'],
+ ['obra','p40','Obra de redes'],['obra','p41','Avance de obra'],['obra','p31','Glorieta oriental'],['obra','p04','Banqueo junto a la vía'],
+ ['renders','porteria','Portería'],['renders','acceso','Acceso al condominio'],['renders','aereo-render','Vista aérea'],['renders','casas','Casas'],['renders','comunidad','Zonas verdes']
+];
+var CAT={todos:'Todo',lotes:'Lotes',vias:'Vías y accesos',paisaje:'Paisaje',obra:'Avance de obra',vid:'Recorridos en video',renders:'Renders'};
+
+/* ---------- PLAN ---------- */
+var gl=$('lots'),gb=$('badges'),svg=$('plan'),tip=$('tip'),sheet=$('sheet');
+function stateOf(l){return ST[l.estado]||ST.no_disponible}
+function build(){
+  gl.innerHTML='';gb.innerHTML='';$('picker').innerHTML='';
+  DATA.lotes.forEach(function(l){
+    var p=document.createElementNS(svgNS,'polygon');
+    p.setAttribute('points',l.poligono);p.setAttribute('class','lot');p.setAttribute('id','lote-'+l.id);
+    p.style.setProperty('--c',stateOf(l).c);p.setAttribute('tabindex','0');p.setAttribute('role','button');
+    p.setAttribute('aria-label','Lote '+l.id+', '+fmtN(l.area,2)+' metros cuadrados, '+stateOf(l).t);
+    p.addEventListener('pointerenter',function(e){showTip(l,e)});
+    p.addEventListener('pointermove',function(e){showTip(l,e)});
+    p.addEventListener('pointerleave',function(){tip.style.opacity=0});
+    p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(l.id,true)}});
+    p.dataset.id=l.id;gl.appendChild(p);
+    var b=document.createElementNS(svgNS,'g');b.setAttribute('class','badge');b.setAttribute('id','badge-'+l.id);b.style.display='none';
+    b.innerHTML='<circle cx="'+l.centro[0]+'" cy="'+l.centro[1]+'" r="30"></circle><text x="'+l.centro[0]+'" y="'+l.centro[1]+'">'+l.id+'</text>';
+    gb.appendChild(b);
+    var k=document.createElement('button');k.type='button';k.textContent=l.id;k.style.setProperty('--c',stateOf(l).c);
+    k.setAttribute('aria-label','Lote '+l.id+', '+stateOf(l).t);k.setAttribute('aria-pressed','false');
+    k.addEventListener('click',function(){pick(l.id,true)});$('picker').appendChild(k);
+  });
+  // legend
+  var cnt={};DATA.lotes.forEach(function(l){cnt[l.estado]=(cnt[l.estado]||0)+1});
+  var lg=$('legend');lg.innerHTML='';
+  [['todos','Todos ('+DATA.lotes.length+')',null]].concat(Object.keys(ST).filter(function(k){return cnt[k]}).map(function(k){return [k,ST[k].t+' ('+cnt[k]+')',ST[k].c]})).forEach(function(o){
+    var c=document.createElement('button');c.type='button';c.className='chip';c.setAttribute('aria-pressed',o[0]===filter);
+    c.innerHTML=(o[2]?'<i style="background:'+o[2]+'"></i>':'')+o[1];
+    c.addEventListener('click',function(){filter=o[0];[].forEach.call(lg.children,function(x){x.setAttribute('aria-pressed','false')});c.setAttribute('aria-pressed','true');applyFilter()});
+    lg.appendChild(c);
+  });
+  $('f-disp').textContent=cnt.disponible||0;$('sp-disp').textContent=cnt.disponible||0;
+  var s=$('f-lote');s.length=1;DATA.lotes.forEach(function(l){if(l.estado!=='vendido'){var o=document.createElement('option');o.value=l.id;o.textContent='Lote '+l.id+' · '+fmtN(l.area,0)+' m²';s.appendChild(o)}});
+  $('upd').textContent='Disponibilidad actualizada: '+new Date(DATA.actualizado+'T12:00:00').toLocaleDateString('es-CO',{day:'numeric',month:'long',year:'numeric'});
+  applyFilter();
+}
+function applyFilter(){DATA.lotes.forEach(function(l){var el=$('lote-'+l.id);el.classList.toggle('dim',filter!=='todos'&&l.estado!==filter)})}
+function showTip(l,e){
+  var r=sheet.getBoundingClientRect();
+  tip.innerHTML='<b>Lote '+l.id+'</b> · '+fmtN(l.area,0)+' m² · '+stateOf(l).t;
+  tip.style.left=(e.clientX-r.left)+'px';tip.style.top=(e.clientY-r.top)+'px';tip.style.opacity=1;
+}
+
+/* ---------- FICHA ---------- */
+var shotIdx=0,shotList=[];
+function pick(id,scroll){
+  var l=DATA.lotes.find(function(x){return x.id===id});if(!l)return;sel=id;
+  DATA.lotes.forEach(function(x){$('lote-'+x.id).classList.toggle('sel',x.id===id);$('badge-'+x.id).style.display=x.id===id?'':'none'});
+  [].forEach.call($('picker').children,function(b){b.setAttribute('aria-pressed',+b.textContent===id)});
+  var st=stateOf(l);
+  var perm=l.precio?money(Math.round(l.precio/l.area/1000)*1000):'—';
+  var b=$('cardbody');b.style.setProperty('--c',st.c);
+  b.innerHTML='<div class="num"><h3>LOTE '+l.id+'</h3><span class="pill" style="--c:'+st.c+'">'+st.t+'</span></div>'+
+   '<dl class="stats" style="margin:0"><div><dt>Área</dt><dd>'+fmtN(l.area,2)+' m²</dd></div><div><dt>Valor m²</dt><dd>'+(l.estado==='vendido'?'—':perm)+'</dd></div>'+
+   '<div class="wide"><dt>Precio</dt><dd>'+(l.estado==='vendido'?'Lote vendido':(l.precio?money(l.precio):'Consultar'))+'</dd></div></dl>'+
+   '<ul class="feat">'+l.rasgos.map(function(r){return '<li>'+r+'</li>'}).join('')+'</ul>'+
+   (l.estado==='vendido'?'<p class="note">Este lote ya tiene propietario. Le mostramos con gusto los lotes vecinos disponibles.</p><button class="btn ghost" type="button" id="nextAvail">Ver un lote disponible</button>':
+   '<button class="btn solid" type="button" id="ask">Consultar este lote</button>')+
+   '<p class="note">Área según plano de urbanismo. Precios sujetos a cambio sin previo aviso.</p>';
+  var a=$('ask');if(a)a.addEventListener('click',function(){$('f-lote').value=String(l.id);closeCard();document.getElementById('contacto').scrollIntoView();setTimeout(function(){$('f-nombre').focus({preventScroll:true})},500)});
+  var n=$('nextAvail');if(n)n.addEventListener('click',function(){var c=DATA.lotes.filter(function(x){return x.estado==='disponible'}).sort(function(a,b){return Math.hypot(a.centro[0]-l.centro[0],a.centro[1]-l.centro[1])-Math.hypot(b.centro[0]-l.centro[0],b.centro[1]-l.centro[1])})[0];if(c)pick(c.id,false)});
+  shotList=l.fotos||[];shotIdx=0;renderShots(l);
+  if(window.matchMedia('(max-width:1000px)').matches)$('card').classList.add('open');
+}
+function renderShots(l){
+  var s=$('shots');
+  if(!shotList.length){s.innerHTML='<div class="empty"><div><b>Fotos del lote '+l.id+' en camino</b>Mientras tanto, vea el recorrido en video en la galería.</div></div>';return}
+  s.innerHTML=shotList.map(function(f,i){return '<img src="'+f+'" alt="Foto real del lote '+l.id+'" class="'+(i===0?'on':'')+'" loading="lazy">'}).join('')+
+   '<button class="zoom" type="button" aria-label="Ampliar foto"></button><span class="count">'+(shotList.length>1?'1 / '+shotList.length:'Foto real')+'</span>'+
+   (shotList.length>1?'<div class="nav2"><button type="button" data-d="-1" aria-label="Foto anterior">‹</button><button type="button" data-d="1" aria-label="Foto siguiente">›</button></div>':'');
+  [].forEach.call(s.querySelectorAll('.nav2 button'),function(b){b.addEventListener('click',function(){step(+b.dataset.d)})});
+  s.querySelector('.zoom').addEventListener('click',function(){openLB(shotList.map(function(f){return {t:'img',src:f,cap:'Lote '+l.id}}),shotIdx)});
+}
+function step(d){var imgs=$('shots').querySelectorAll('img');if(!imgs.length)return;imgs[shotIdx].classList.remove('on');shotIdx=(shotIdx+d+imgs.length)%imgs.length;imgs[shotIdx].classList.add('on');$('shots').querySelector('.count').textContent=(shotIdx+1)+' / '+imgs.length}
+function closeCard(){$('card').classList.remove('open')}
+$('cardx').addEventListener('click',closeCard);
+
+/* ---------- PAN / ZOOM ---------- */
+var VB0=[560,120,1560,1560],vb=VB0.slice(),pts=new Map(),drag=null,moved=false,pinch=null;
+function setVB(v){
+  var w=Math.max(260,Math.min(2400,v[2])),h=w*(VB0[3]/VB0[2]);
+  var cx=v[0]+v[2]/2,cy=v[1]+v[3]/2;
+  cx=Math.max(300,Math.min(2300,cx));cy=Math.max(100,Math.min(1750,cy));
+  vb=[cx-w/2,cy-h/2,w,h];svg.setAttribute('viewBox',vb.join(' '));
+}
+function toSvg(x,y){var r=svg.getBoundingClientRect();var s=Math.max(vb[2]/r.width,vb[3]/r.height);var ox=(r.width*s-vb[2])/2,oy=(r.height*s-vb[3])/2;return [vb[0]-ox+(x-r.left)*s,vb[1]-oy+(y-r.top)*s]}
+function zoomAt(f,x,y){var p=toSvg(x,y);var nw=vb[2]*f,nh=vb[3]*f;setVB([p[0]-(p[0]-vb[0])*f,p[1]-(p[1]-vb[1])*f,nw,nh])}
+svg.addEventListener('wheel',function(e){e.preventDefault();zoomAt(e.deltaY>0?1.15:1/1.15,e.clientX,e.clientY)},{passive:false});
+svg.addEventListener('pointerdown',function(e){svg.setPointerCapture(e.pointerId);pts.set(e.pointerId,[e.clientX,e.clientY]);moved=false;
+  if(pts.size===1)drag={x:e.clientX,y:e.clientY,vb:vb.slice(),target:e.target};
+  if(pts.size===2){var a=[...pts.values()];pinch={d:Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]),vb:vb.slice(),c:[(a[0][0]+a[1][0])/2,(a[0][1]+a[1][1])/2]};drag=null}});
+svg.addEventListener('pointermove',function(e){if(!pts.has(e.pointerId))return;pts.set(e.pointerId,[e.clientX,e.clientY]);
+  if(pinch&&pts.size===2){var a=[...pts.values()];var d=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);vb=pinch.vb.slice();zoomAt(pinch.d/d,pinch.c[0],pinch.c[1]);moved=true;return}
+  if(drag){var dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>5)moved=true;if(!moved)return;svg.classList.add('drag');tip.style.opacity=0;
+    var r=svg.getBoundingClientRect();var s=Math.max(drag.vb[2]/r.width,drag.vb[3]/r.height);setVB([drag.vb[0]-dx*s,drag.vb[1]-dy*s,drag.vb[2],drag.vb[3]])}});
+function up(e){var t=drag&&drag.target;pts.delete(e.pointerId);svg.classList.remove('drag');
+  if(!moved&&t&&t.classList&&t.classList.contains('lot'))pick(+t.dataset.id,false);
+  if(pts.size<2)pinch=null;if(pts.size===0)drag=null}
+svg.addEventListener('pointerup',up);svg.addEventListener('pointercancel',up);
+$('zin').addEventListener('click',function(){var r=svg.getBoundingClientRect();zoomAt(1/1.35,r.left+r.width/2,r.top+r.height/2)});
+$('zout').addEventListener('click',function(){var r=svg.getBoundingClientRect();zoomAt(1.35,r.left+r.width/2,r.top+r.height/2)});
+$('zreset').addEventListener('click',function(){setVB(VB0)});
+
+/* ---------- GALLERY ---------- */
+var gfilter='todos',gitems=[];
+function itemOf(g){return g[0]==='vid'?{t:'vid',src:'vid/'+g[1]+'.mp4',poster:'vid/'+g[1]+'.jpg',cap:g[2]}:{t:'img',src:'img/'+g[1]+'.jpg',cap:g[2]+(g[0]==='renders'?' · imagen ilustrativa':'')}}
+function drawGallery(){
+  var tabs=$('tabs');tabs.innerHTML='';
+  Object.keys(CAT).forEach(function(k){var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=CAT[k];b.setAttribute('aria-pressed',k===gfilter);
+    b.addEventListener('click',function(){gfilter=k;drawGallery()});tabs.appendChild(b)});
+  var list=G.filter(function(g){return gfilter==='todos'||g[0]===gfilter});gitems=list.map(itemOf);
+  $('grid').innerHTML=gitems.map(function(it,i){
+    return '<figure data-i="'+i+'" tabindex="0" role="button" aria-label="Ampliar: '+it.cap+'">'+
+      (it.t==='vid'?'<video src="'+it.src+'" poster="'+it.poster+'" muted loop playsinline preload="none"></video><span class="play">Video</span>':'<img src="'+it.src+'" alt="'+it.cap+'" loading="lazy">')+
+      '<figcaption>'+it.cap+'</figcaption></figure>'}).join('');
+  [].forEach.call($('grid').children,function(f){
+    var v=f.querySelector('video');
+    if(v){f.addEventListener('pointerenter',function(){v.play().catch(function(){})});f.addEventListener('pointerleave',function(){v.pause()})}
+    var open=function(){openLB(gitems,+f.dataset.i)};
+    f.addEventListener('click',open);f.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();open()}});
+  });
+}
+var galFocus=null;
+function openGal(e){if(e)e.preventDefault();galFocus=document.activeElement;$('gal').hidden=false;document.body.style.overflow='hidden';$('galx').focus()}
+function closeGal(){$('gal').hidden=true;document.body.style.overflow='';[].forEach.call($('grid').querySelectorAll('video'),function(v){v.pause()});if(galFocus)galFocus.focus()}
+[].forEach.call(document.querySelectorAll('.opengal'),function(a){a.addEventListener('click',openGal)});
+$('galx').addEventListener('click',closeGal);
+[].forEach.call(document.querySelectorAll('#obra figure'),function(f,i,all){f.style.cursor='zoom-in';f.addEventListener('click',function(){openLB([].map.call(all,function(x){var im=x.querySelector('img');return {t:'img',src:im.getAttribute('src'),cap:x.querySelector('figcaption').textContent}}),i)})});
+var lbItems=[],lbI=0,lastFocus=null;
+function openLB(items,i){lbItems=items;lbI=i;lastFocus=document.activeElement;$('lb').hidden=false;drawLB();$('lbx').focus()}
+function drawLB(){var it=lbItems[lbI];$('lbm').innerHTML=it.t==='vid'?'<video src="'+it.src+'" controls autoplay muted loop playsinline></video>':'<img src="'+it.src+'" alt="'+it.cap+'">';$('lbc').textContent=it.cap+' · '+(lbI+1)+' de '+lbItems.length}
+function closeLB(){$('lb').hidden=true;$('lbm').innerHTML='';if(lastFocus)lastFocus.focus()}
+$('lbx').addEventListener('click',closeLB);
+$('lbp').addEventListener('click',function(){lbI=(lbI-1+lbItems.length)%lbItems.length;drawLB()});
+$('lbn').addEventListener('click',function(){lbI=(lbI+1)%lbItems.length;drawLB()});
+document.addEventListener('keydown',function(e){if($('lb').hidden){if(e.key==='Escape'){if(!$('gal').hidden)closeGal();else closeCard()}return}
+  if(e.key==='Escape')closeLB();if(e.key==='ArrowRight')$('lbn').click();if(e.key==='ArrowLeft')$('lbp').click()});
+
+/* ---------- FORM ---------- */
+$('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var nombre=$('f-nombre').value.trim(),tel=$('f-tel').value.trim();
+  var out=$('out');out.hidden=false;
+  if(!nombre||!tel){out.innerHTML='<pre>Escriba su nombre y su teléfono para poder contactarlo.</pre>';(nombre?$('f-tel'):$('f-nombre')).focus();return}
+  var lote=$('f-lote').value;
+  var msg='Hola, soy '+nombre+'. '+$('f-tipo').value+' en La Virginia'+(lote?', lote '+lote:'')+'.\nTeléfono: '+tel+($('f-mail').value.trim()?'\nCorreo: '+$('f-mail').value.trim():'')+($('f-msg').value.trim()?'\n'+$('f-msg').value.trim():'');
+  var wa=(DATA.config&&DATA.config.whatsapp||'').replace(/\D/g,'');
+  out.innerHTML='<pre id="msgtxt"></pre><div class="row">'+(wa?'<a class="btn solid" target="_blank" rel="noopener" href="https://wa.me/'+wa+'?text='+encodeURIComponent(msg)+'">Abrir WhatsApp</a>':'')+'<button class="btn ghost" type="button" id="copy">Copiar mensaje</button></div>'+
+    (wa?'<p class="note">Se abrirá WhatsApp con este mensaje listo. Envíelo desde allí.</p>':'<p class="note">El número de WhatsApp del proyecto aún no está configurado. Copie el mensaje y envíelo a su asesor.</p>');
+  $('msgtxt').textContent=msg;
+  $('copy').addEventListener('click',function(){var b=this;navigator.clipboard.writeText(msg).then(function(){b.textContent='Copiado'}).catch(function(){var r=document.createRange();r.selectNodeContents($('msgtxt'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Seleccionado, copie con Ctrl+C'})});
+});
+
+/* ---------- HERO VIDEO ---------- */
+var hv=$('herovid');if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');hv.pause()}
+
+/* ---------- BOOT ---------- */
+function boot(){build();drawGallery();var first=DATA.lotes.find(function(l){return l.id===6})||DATA.lotes[0];pick(first.id,false);$('card').classList.remove('open')}
+boot();
+fetch('lotes.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(d){if(d&&d.lotes&&d.lotes.length){DATA=d;var keep=sel;build();if(keep)pick(keep,false);$('card').classList.remove('open')}}).catch(function(){});
+})();
+</script>
+
+</body>
+</html>
