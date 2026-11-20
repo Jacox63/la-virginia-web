@@ -23,7 +23,11 @@ Todo lo comercial está en `lotes.json`; no hay que tocar el diseño.
 
 `index.html` trae una copia de respaldo de los datos; si `lotes.json` carga, la página usa siempre `lotes.json`.
 
-## Publicar con GitHub Pages
+## Publicación
+
+El sitio está publicado en **https://lavirginiacondominio.com** con Cloudflare Pages (proyecto `la-virginia-web`). Cada commit a `main` se publica solo en uno o dos minutos. El dominio está registrado en Cloudflare Registrar.
+
+## Publicar con GitHub Pages (alternativa)
 
 Settings → Pages → Source: *Deploy from a branch* → Branch: `main` / carpeta `/ (root)`.
 El sitio queda en `https://<usuario>.github.io/<repositorio>/`. Para usar `condominiolavirginia.com`, agregue el dominio en la misma pantalla y configure el DNS según las instrucciones de GitHub.
